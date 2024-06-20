@@ -207,10 +207,15 @@ h2{
 /* Benefits section */
 
 .benefits-section{
-  padding: 68px 40px;
-  background-color: var(--warm-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 68px 30px;
   width: 100%;
   height: auto;
+  background-color: var(--warm-black);
+
 }
 .benefits-section .what-we-do-titles h1{
   color: var(--just-white);
@@ -220,6 +225,8 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items:flex-start;
+  min-width: 288px;
+  max-width: 400px;
   padding: 12px 12px 18px 12px;
   margin-bottom: 18px;
   border-radius: 4px;
@@ -236,4 +243,143 @@ h2{
 .target p{
   font-size: 1.4rem;
   color: var(--grey);
+}
+
+/* bitcoin img section */
+
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url('./assets/img/bitcoinbaby2x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bitcoin-img-container h1{
+padding-top: 40px;
+}
+
+/* plans section */
+
+.plans-section{
+
+  width: 100%;
+  height: auto;
+  padding: 36px 20px;
+  background-color: var();
+}
+.select-plan{
+  display: flex;
+  justify-content: center;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: 50px;
+}
+.select-plan article{
+  position: relative;
+  scroll-snap-align: center;
+  margin: 25px 0;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+  background-color: var(--just-white);
+}
+.select-plan .float-title{
+  position: absolute;
+  top: 0;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  color: var(--just-white);
+  background-color: var(--bitcoin-orange);
+}
+.target-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+}
+.select-plan .target-content h3{
+  color: var(--black);
+}
+.price-section{
+  display: flex;
+}
+.price-section span{
+  padding-top: 12px;
+}
+
+.select-plan .target-content .price {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: var(--warm-black);
+}
+article .save{
+  padding: 0 16px 0 16px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+.target-content button{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 48px;
+  background-color: var(--off-white);
+  border-radius: 4px;
+  border: 2px solid var(--bitcoin-orange);
+}
+
+/* footer*/
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer .links{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.links a{
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: var(--just-white);
+  font-family: 'DM Sans';
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo p{
+  color: var(--soft-orange);
+  font-size: 0.8rem;
 }
